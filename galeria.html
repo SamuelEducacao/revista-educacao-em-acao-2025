@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeria de Fotos - Revista Educação em Ação</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8e1;
+      color: #2d2d2d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 42px;
+      color: #4a148c;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: #4a148c;
+      display: block;
+      margin-top: 10px;
+    }
+    .voltar {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #00695c;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Galeria de Fotos</h1>
+  <div class="grid">
+    <div class="card">
+      📷
+      <a href="galeria/forum-boas-praticas.html">10º Fórum de Boas Práticas – 2025</a>
+    </div>
+    <div class="card">
+      👩‍🏫
+      <a href="galeria/mulher-educadora.html">1º Fórum da Mulher Educadora – 2025</a>
+    </div>
+    <div class="card">
+      🏛️
+      <a href="galeria/cemae.html">CEMAE</a>
+    </div>
+    <div class="card">
+      🏫
+      <a href="galeria/escolas.html">Escolas</a>
+    </div>
+  </div>
+
+  <a class="voltar" href="menu.html">← Voltar ao índice</a>
+</body>
+</html>

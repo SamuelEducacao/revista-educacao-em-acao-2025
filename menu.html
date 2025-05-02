@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Índice - Revista Educação em Ação</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8e1;
+      color: #2d2d2d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 48px;
+      color: #4a148c;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 20px;
+      color: #00695c;
+      margin-bottom: 40px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+    .card a {
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      color: #4a148c;
+    }
+    .voltar {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #00695c;
+      text-decoration: none;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Índice da Revista</h1>
+  <h2>Volume 6 – 2025</h2>
+
+<div class="grid">
+  <div class="card"><a href="artigos/artigo-01.html">Brincar de quê?</a></div>
+  <div class="card"><a href="artigos/artigo-02.html">Descobrindo as riquezas de Guaxupé</a></div>
+  <div class="card"><a href="artigos/artigo-03.html">Me descobrindo pela aprendizagem sensorial</a></div>
+  <div class="card"><a href="artigos/artigo-04.html">Aventura nas Alturas</a></div>
+<div class="card"><a href="artigos/artigo-05.html">Ferramentas tecnológicas que facilitam o trabalho do professor</a></div>
+
+  <div class="card"><a href="galeria.html">Galeria de Fotos</a></div>
+</div>
+
+  <a class="voltar" href="index.html">← Voltar à capa</a>
+
+</body>
+</html>
