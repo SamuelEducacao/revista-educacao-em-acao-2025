@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Editorial – Uma nova página na nossa história</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background-image: url('imagens/fundo5.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .bloco {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.92);
+      margin: auto;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+      color: #2d2d2d;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #6a1b9a;
+      margin-bottom: 10px;
+    }
+
+    .autora {
+      font-weight: bold;
+      color: #00796b;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.05em;
+    }
+
+    strong {
+      color: #4e342e;
+    }
+
+    .lado-direito, .lado-esquerdo {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      margin-bottom: 30px;
+    }
+
+    .lado-direito img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .lado-esquerdo {
+      flex-direction: row-reverse;
+    }
+
+    .lado-esquerdo img {
+      width: 250px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .voltar {
+      display: block;
+      margin-top: 60px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 768px) {
+      .lado-direito, .lado-esquerdo {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .lado-direito img,
+      .lado-esquerdo img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bloco">
+    <h1>📘 Editorial – Uma nova página na nossa história</h1>
+
+    <div class="autora">
+      Por Aline Monteiro Melo Ribeiro<br>
+      Secretária Municipal de Educação de Guaxupé
+    </div>
+
+    <div class="lado-direito">
+      <div>
+        <p>Se esta revista chegou até você, é porque acredita no poder transformador da educação. Eu também. E posso dizer isso com a certeza de quem viveu — e ainda vive — o cotidiano escolar bem de perto.</p>
+
+        <p>Desde 2002, quando iniciei minha trajetória como professora na <strong>Escola Municipal Wagner Ribeiro Macêdo</strong> (CAIC), carrego comigo o compromisso com cada criança, com cada sala de aula e com cada profissional que transforma a escola num espaço de aprendizagem, afeto e possibilidades. Atuei também nas <strong>Escolas Professor José de Sá</strong> e <strong>Doutor Carlos de Souza Ribeiro</strong>, onde tive a honra de ser diretora por quatro anos — e foi ali, no contato diário com a comunidade escolar, que compreendi que educação se faz com diálogo, coragem e presença.</p>
+      </div>
+      <img src="imagens/editorial/foto2.jpg" alt="Legenda futura">
+    </div>
+
+    <p>Em 2024, fui eleita vereadora do nosso município, mas fiz uma escolha difícil e profundamente pensada: aceitei o convite para assumir a Secretaria Municipal de Educação. Acredito que, aqui, posso contribuir de forma ainda mais direta para realizar mudanças estruturais, apoiar nossas escolas com mais eficiência e garantir que as políticas públicas cheguem onde mais importam — no chão da sala de aula.</p>
+
+    <p>Nestes primeiros dias de gestão, temos construído uma nova fase para a rede municipal de educação. Revisamos rotas do transporte escolar, fortalecemos as formações pedagógicas, ouvimos com atenção servidores e equipes escolares, reformamos espaços, atualizamos contratos e, acima de tudo, mantivemos vivo o espírito coletivo de pertencimento e valorização.</p>
+
+    <p>Ser professora me ensinou que ninguém faz nada sozinho. Ser gestora reforça, todos os dias, que o papel da Secretaria é apoiar, articular e garantir que a escola possa florescer. E é exatamente isso que buscamos fazer: cuidar dos bastidores para que o palco do aprendizado seja cada vez mais potente.</p>
+
+    <div class="lado-esquerdo">
+      <div>
+        <p>Esta revista é um reflexo disso: uma coletânea de práticas, ideias e experiências vividas por quem faz a educação acontecer em Guaxupé. Ao longo destas páginas, você vai conhecer o talento, a criatividade e o compromisso de nossos educadores. Vai perceber que a comunicação, tema desta edição, não é apenas transmissão de informação — é construção de laços, é partilha de saberes, é inspiração.</p>
+
+        <p>A nova cara da Secretaria de Educação é feita de muitas mãos. Tem o sorriso da merendeira, a força do motorista, a dedicação dos professores, o zelo da equipe de apoio, o olhar atento dos coordenadores e diretores. E tem também o coração de quem, como eu, nunca deixou de ser professora.</p>
+
+        <p><strong>Seguimos!</strong><br>
+        Com responsabilidade,<br>
+        com escuta,<br>
+        com propósito<br>
+        e com muito amor pela educação pública.</p>
+      </div>
+      <img src="imagens/editorial/foto1.jpg" alt="Aline em frente a mural com asas de borboleta">
+    </div>
+
+    <a class="voltar" href="index.html">← Voltar à capa</a>
+  </div>
+</body>
+</html>

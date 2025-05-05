@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Volumes Anteriores</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffef9;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      color: #2d2d2d;
+    }
+    h1 {
+      color: #4a148c;
+      margin-bottom: 30px;
+    }
+    .lista {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .lista a {
+      text-decoration: none;
+      color: #00695c;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      margin-top: 20px;
+      border: 1px solid #ccc;
+    }
+    .voltar {
+      display: block;
+      margin-top: 40px;
+      text-decoration: none;
+      color: #00695c;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Volumes Anteriores da Revista</h1>
+  <div class="lista">
+    <a href="#" onclick="abrirPDF('pdfs/Revista Educação em Ação Vol. 1.pdf')">Volume 1</a>
+    <a href="#" onclick="abrirPDF('pdfs/Revista Educação em Ação Vol. 2.pdf')">Volume 2</a>
+    <a href="#" onclick="abrirPDF('pdfs/Revista Educação em Ação Vol. 3.pdf')">Volume 3</a>
+    <a href="#" onclick="abrirPDF('pdfs/Revista Educação em Ação Vol. 4.pdf')">Volume 4</a>
+    <a href="#" onclick="abrirPDF('pdfs/Revista Educação em Ação Vol. 5.pdf')">Volume 5</a>
+  </div>
+
+  <iframe id="visor" src=""></iframe>
+
+  <a class="voltar" href="index.html">← Voltar à capa</a>
+
+  <script>
+    function abrirPDF(caminho) {
+      document.getElementById('visor').src = caminho;
+    }
+  </script>
+</body>
+</html>
