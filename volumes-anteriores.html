@@ -2,50 +2,79 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Volumes Anteriores</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volumes Anteriores - Revista Educação em Ação</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fffef9;
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
+      background: url("imagens/fundo2.jpg") no-repeat center center fixed;
+      background-size: cover;
       color: #2d2d2d;
-    }
-    h1 {
-      color: #4a148c;
-      margin-bottom: 30px;
-    }
-    .lista {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      align-items: center;
+      padding: 40px 20px;
+      backdrop-filter: brightness(1.1) saturate(1.2);
     }
-    .lista a {
+
+    h1 {
+      font-size: 42px;
+      color: #4a148c;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .card a {
       text-decoration: none;
-      color: #00695c;
       font-weight: bold;
+      font-size: 16px;
+      color: #4a148c;
     }
-    .lista a:hover {
-      text-decoration: underline;
-    }
+
     .voltar {
-      display: block;
-      margin-top: 40px;
-      text-decoration: none;
-      color: #00695c;
+      margin-top: 50px;
       font-size: 14px;
+      color: #00695c;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 28px; }
     }
   </style>
 </head>
 <body>
   <h1>Volumes Anteriores da Revista</h1>
-  <div class="lista">
-    <a href="https://drive.google.com/file/d/147WOMyHSwqvmCHkI0YzXaWFcvpeNJ8pO/view?usp=sharing" target="_blank">📘 Volume 1 (2022)</a>
-    <a href="https://drive.google.com/file/d/16RnaRHyHyAbtpTIrZNuO2sqwdDyomuXZ/view?usp=sharing" target="_blank">📘 Volume 2 (2022)</a>
-    <a href="https://drive.google.com/file/d/1THrX9zQYuZD6FVAG_-FlzyvXpO7HF5p9/view?usp=sharing" target="_blank">📘 Volume 3 (2023)</a>
-    <a href="https://drive.google.com/file/d/1HugXS9DNC4ooFw8j-rVdjNt6K3rwVk5b/view?usp=sharing" target="_blank">📘 Volume 4 (2024)</a>
-    <a href="https://drive.google.com/file/d/1DmF9PFFAZQE7OfK5ORpydn67V6xlG89a/view?usp=sharing" target="_blank">📘 Volume 5 (2024)</a>
+
+  <div class="grid">
+    <div class="card"><a href="https://drive.google.com/file/d/147WOMyHSwqvmCHkI0YzXaWFcvpeNJ8pO/view?usp=sharing" target="_blank">📘 Volume 1 (2022)</a></div>
+    <div class="card"><a href="https://drive.google.com/file/d/16RnaRHyHyAbtpTIrZNuO2sqwdDyomuXZ/view?usp=sharing" target="_blank">📘 Volume 2 (2022)</a></div>
+    <div class="card"><a href="https://drive.google.com/file/d/1THrX9zQYuZD6FVAG_-FlzyvXpO7HF5p9/view?usp=sharing" target="_blank">📘 Volume 3 (2023)</a></div>
+    <div class="card"><a href="https://drive.google.com/file/d/1HugXS9DNC4ooFw8j-rVdjNt6K3rwVk5b/view?usp=sharing" target="_blank">📘 Volume 4 (2024)</a></div>
+    <div class="card"><a href="https://drive.google.com/file/d/1DmF9PFFAZQE7OfK5ORpydn67V6xlG89a/view?usp=sharing" target="_blank">📘 Volume 5 (2024)</a></div>
   </div>
 
   <a class="voltar" href="index.html">← Voltar à capa</a>
