@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Educação em Ação – Volume 6</title>
   <style>
     body {
@@ -14,17 +15,22 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       height: 100vh;
+      padding: 20px;
     }
+
     h1 {
       font-size: 64px;
       font-weight: bold;
       margin: 0;
     }
+
     h2 {
       font-size: 24px;
       margin: 10px 0 50px;
     }
+
     .botao {
       display: inline-block;
       background-color: #14213D;
@@ -35,18 +41,51 @@
       font-weight: bold;
       font-size: 18px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin: 5px;
     }
+
+    .botao:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+    }
+
     .footer {
       position: absolute;
       bottom: 20px;
       width: 100%;
-      font-size: 14px;
+      font-size: 16px;
       color: #14213D;
+      text-align: center;
     }
+
     .footer img {
-      height: 40px;
-      float: right;
-      margin-right: 20px;
+      height: 50px;
+      display: block;
+      margin: 10px auto 0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .botao {
+        font-size: 16px;
+        padding: 12px 20px;
+      }
+
+      .footer {
+        font-size: 14px;
+      }
+
+      .footer img {
+        height: 40px;
+      }
     }
   </style>
 </head>
@@ -55,15 +94,14 @@
   <div>
     <h1>EDUCAÇÃO EM AÇÃO</h1>
     <h2>Volume 6 – Junho de 2025</h2>
-  <a href="menu.html" class="botao">ACESSE O ÍNDICE</a>
-  <a href="editorial.html" class="botao">LEIA O EDITORIAL</a>
-  <a href="volumes-anteriores.html" class="botao">VOLUMES ANTERIORES</a>
-  <a href="galeria.html" class="botao">GALERIA DE FOTOS</a>
-
+    <a href="menu.html" class="botao">ACESSE O ÍNDICE</a>
+    <a href="editorial.html" class="botao">LEIA O EDITORIAL</a>
+    <a href="volumes-anteriores.html" class="botao">VOLUMES ANTERIORES</a>
+    <a href="galeria.html" class="botao">GALERIA DE FOTOS</a>
   </div>
 
   <div class="footer">
-    Secretaria Municipal de Educação de Guaxupé
+    Secretaria Municipal de Educação de Guaxupé<br>
     <img src="imagens/brasao.png" alt="Brasão da Prefeitura de Guaxupé">
   </div>
 
