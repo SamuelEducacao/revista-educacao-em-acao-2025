@@ -18,11 +18,11 @@
 
     .bloco {
       max-width: 900px;
-      background-color: rgba(255, 255, 255, 0.92);
+      background-color: rgba(255, 255, 255, 0.94);
       margin: auto;
       padding: 40px 30px;
       border-radius: 16px;
-      box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
       color: #2d2d2d;
       line-height: 1.8;
     }
@@ -56,20 +56,22 @@
       margin-bottom: 30px;
     }
 
-    .lado-direito img {
-      width: 250px;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-    }
+.lado-direito img,
+.lado-esquerdo img {
+  width: 250px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.lado-direito img:hover,
+.lado-esquerdo img:hover {
+  transform: scale(1.05);
+}
+
 
     .lado-esquerdo {
       flex-direction: row-reverse;
-    }
-
-    .lado-esquerdo img {
-      width: 250px;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
     }
 
     .voltar {
@@ -79,10 +81,12 @@
       color: #00796b;
       font-weight: bold;
       font-size: 0.95em;
+      text-align: center;
     }
 
     @media (max-width: 768px) {
-      .lado-direito, .lado-esquerdo {
+      .lado-direito,
+      .lado-esquerdo {
         flex-direction: column;
         align-items: center;
       }
@@ -97,7 +101,7 @@
 </head>
 <body>
   <div class="bloco">
-    <h1>📘 Editorial – Uma nova página na nossa história</h1>
+    <h1> Editorial – Uma nova página na nossa história</h1>
 
     <div class="autora">
       Por Aline Monteiro Melo Ribeiro<br>
@@ -108,11 +112,12 @@
       <div>
         <p>Se esta revista chegou até você, é porque acredita no poder transformador da educação. Eu também. E posso dizer isso com a certeza de quem viveu — e ainda vive — o cotidiano escolar bem de perto.</p>
 
-        <p>Desde 2002, quando iniciei minha trajetória como professora na <strong>Escola Municipal Wagner Ribeiro Macêdo</strong> (CAIC), carrego comigo o compromisso com cada criança, com cada sala de aula e com cada profissional que transforma a escola num espaço de aprendizagem, afeto e possibilidades. Atuei também nas <strong>Escolas Professor José de Sá</strong> e <strong>Doutor Carlos de Souza Ribeiro</strong>, onde tive a honra de ser diretora por quatro anos — e foi ali, no contato diário com a comunidade escolar, que compreendi que educação se faz com diálogo, coragem e presença. Em 2024, fui eleita vereadora do nosso município, mas fiz uma escolha difícil e profundamente pensada: aceitei o convite para assumir a Secretaria Municipal de Educação. Acredito que, aqui, posso contribuir de forma ainda mais direta para realizar mudanças estruturais, apoiar nossas escolas com mais eficiência e garantir que as políticas públicas cheguem onde mais importam — no chão da sala de aula.</p>
+        <p>Desde 2002, quando iniciei minha trajetória como professora na <strong>Escola Municipal Wagner Ribeiro Macêdo</strong> (CAIC), carrego comigo o compromisso com cada criança, com cada sala de aula e com cada profissional que transforma a escola num espaço de aprendizagem, afeto e possibilidades. Atuei também nas <strong>Escolas Professor José de Sá</strong> e <strong>Doutor Carlos de Souza Ribeiro</strong>, onde tive a honra de ser diretora por quatro anos — e foi ali, no contato diário com a comunidade escolar, que compreendi que educação se faz com diálogo, coragem e presença.</p>
+
+        <p>Em 2024, fui eleita vereadora do nosso município, mas fiz uma escolha difícil e profundamente pensada: aceitei o convite para assumir a Secretaria Municipal de Educação. Acredito que, aqui, posso contribuir de forma ainda mais direta para realizar mudanças estruturais, apoiar nossas escolas com mais eficiência e garantir que as políticas públicas cheguem onde mais importam — no chão da sala de aula.</p>
       </div>
       <img src="imagens/editorial/foto2.jpg" alt="Legenda futura">
     </div>
-
 
     <p>Nestes primeiros dias de gestão, temos construído uma nova fase para a rede municipal de educação. Revisamos rotas do transporte escolar, fortalecemos as formações pedagógicas, ouvimos com atenção servidores e equipes escolares, reformamos espaços, atualizamos contratos e, acima de tudo, mantivemos vivo o espírito coletivo de pertencimento e valorização.</p>
 

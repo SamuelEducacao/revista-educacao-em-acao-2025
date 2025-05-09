@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Projeto – Um Dia com Você na Escola</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background-image: url('imagens/fundo5.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-attachment: fixed;
+      padding: 40px 20px;
+      margin: 0;
+    }
+
+    .bloco {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.94);
+      margin: auto;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 24px rgba(0, 0, 0, 0.08);
+      color: #2d2d2d;
+      line-height: 1.8;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      color: #d84315;
+      margin-bottom: 10px;
+    }
+
+    .autora {
+      font-weight: bold;
+      color: #00796b;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 1.05em;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .galeria img {
+      width: 260px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .voltar {
+      display: block;
+      margin-top: 60px;
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      font-size: 0.95em;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .galeria img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="bloco">
+    <h1> Projeto: Um Dia com Você na Escola</h1>
+
+    <div class="autora">
+      Secretaria Municipal de Educação de Guaxupé
+    </div>
+
+    <p>Se tem uma coisa que a gente aprende na escola, é que <strong>presença faz toda a diferença</strong>. É por isso que a Secretaria Municipal de Educação de Guaxupé está lançando o projeto <strong>“Um Dia com Você na Escola”</strong> – uma proposta simples, mas poderosa: estar junto.</p>
+
+    <p>Nesse projeto, a nossa secretária Aline vai viver, de perto, o dia a dia de cada escola. Vai chegar cedo, participar da recepção, sentar na roda com as crianças, conversar com os professores, ajudar nos “treinos da vida real”, acompanhar a merenda, ouvir as histórias, as ideias e as necessidades que nascem em cada canto da escola.</p>
+
+    <p>Será um dia inteiro para ver, sentir, apoiar e agir. Um dia para colocar a mão na massa (e no coração). Um dia para fortalecer laços, inspirar ideias e construir soluções ali, no calor da escola, onde tudo acontece.</p>
+
+    <p>Porque não existe gestão sem escuta, nem transformação sem presença. E quem ama a escola, vive com ela – e não apenas por ela.</p>
+
+    <div class="galeria">
+      <img src="imagens/projeto-um-dia/foto1.jpg" alt="Aline na escola">
+   
+      <!-- Adicione mais imagens conforme necessário -->
+    </div>
+
+    <a class="voltar" href="index.html">← Voltar à capa</a>
+  </div>
+</body>
+</html>

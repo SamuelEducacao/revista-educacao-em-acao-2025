@@ -65,6 +65,40 @@
       margin: 10px auto 0;
     }
 
+    /* BOTÃO DE NOTIFICAÇÃO */
+    .botao-notificacao {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #ff003c;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px rgba(255, 0, 60, 0.8);
+      animation: brilho 1.5s infinite alternate, vibrar 0.3s infinite alternate;
+      z-index: 9999;
+    }
+
+    @keyframes brilho {
+      0% {
+        box-shadow: 0 0 10px rgba(255, 0, 60, 0.6);
+        transform: scale(1);
+      }
+      100% {
+        box-shadow: 0 0 25px rgba(255, 0, 60, 1);
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes vibrar {
+      0% { transform: translate(0, 0); }
+      100% { transform: translate(1px, -1px); }
+    }
+
     @media (max-width: 600px) {
       h1 {
         font-size: 38px;
@@ -86,10 +120,17 @@
       .footer img {
         height: 40px;
       }
+
+      .botao-notificacao {
+        font-size: 12px;
+        padding: 10px 16px;
+      }
     }
   </style>
 </head>
 <body>
+
+  <a href="artigo-projeto-um-dia.html" class="botao-notificacao">🔔 Secretária nas Escolas!</a>
 
   <div>
     <h1>EDUCAÇÃO EM AÇÃO</h1>
