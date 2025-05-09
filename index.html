@@ -4,129 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Educação em Ação – Volume 6</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url("imagens/fundo.jpg") no-repeat center center fixed;
-      background-size: cover;
-      color: #14213D;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      padding: 20px;
-    }
+<style>
+  @keyframes aparecerLetras {
+    0% { opacity: 0; transform: translateY(-30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
 
-    h1 {
-      font-size: 64px;
-      font-weight: bold;
-      margin: 0;
-    }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-    h2 {
-      font-size: 24px;
-      margin: 10px 0 50px;
-    }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url("imagens/fundo.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #14213D;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+  }
 
-    .botao {
-      display: inline-block;
-      background-color: #14213D;
-      color: white;
-      padding: 15px 30px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 18px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin: 5px;
-    }
+  h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+    animation: aparecerLetras 1s ease-out forwards;
+  }
 
-    .botao:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.25);
-    }
+  h2, .botao, .footer {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
 
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      width: 100%;
-      font-size: 16px;
-      color: #14213D;
-      text-align: center;
-    }
+  h2 { animation-delay: 0.8s; font-size: 24px; margin: 10px 0 50px; }
+  .botao { animation-delay: 1.2s; }
+  .footer { animation-delay: 1.5s; }
 
-    .footer img {
-      height: 50px;
-      display: block;
-      margin: 10px auto 0;
-    }
+  .botao {
+    display: inline-block;
+    background-color: #14213D;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+  }
 
-    /* BOTÃO DE NOTIFICAÇÃO */
-    .botao-notificacao {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: #ff003c;
-      color: #fff;
-      padding: 12px 20px;
-      border-radius: 50px;
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-      text-transform: uppercase;
-      box-shadow: 0 0 20px rgba(255, 0, 60, 0.8);
-      animation: brilho 1.5s infinite alternate, vibrar 0.3s infinite alternate;
-      z-index: 9999;
-    }
+  .botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+  }
 
-    @keyframes brilho {
-      0% {
-        box-shadow: 0 0 10px rgba(255, 0, 60, 0.6);
-        transform: scale(1);
-      }
-      100% {
-        box-shadow: 0 0 25px rgba(255, 0, 60, 1);
-        transform: scale(1.05);
-      }
-    }
+  .footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    color: #14213D;
+    text-align: center;
+  }
 
-    @keyframes vibrar {
-      0% { transform: translate(0, 0); }
-      100% { transform: translate(1px, -1px); }
-    }
+  .footer img {
+    height: 50px;
+    display: block;
+    margin: 10px auto 0;
+  }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 38px;
-      }
+  .botao-notificacao {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ff003c;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(255, 0, 60, 0.8);
+    animation: brilho 1.5s infinite alternate, vibrar 0.3s infinite alternate;
+    z-index: 9999;
+  }
 
-      h2 {
-        font-size: 18px;
-      }
+  @keyframes brilho {
+    0% { box-shadow: 0 0 10px rgba(255, 0, 60, 0.6); transform: scale(1); }
+    100% { box-shadow: 0 0 25px rgba(255, 0, 60, 1); transform: scale(1.05); }
+  }
 
-      .botao {
-        font-size: 16px;
-        padding: 12px 20px;
-      }
+  @keyframes vibrar {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(1px, -1px); }
+  }
 
-      .footer {
-        font-size: 14px;
-      }
+  @media (max-width: 600px) {
+    h1 { font-size: 38px; }
+    h2 { font-size: 18px; }
+    .botao { font-size: 16px; padding: 12px 20px; }
+    .footer { font-size: 14px; }
+    .footer img { height: 40px; }
+    .botao-notificacao { font-size: 12px; padding: 10px 16px; }
+  }
+</style>
 
-      .footer img {
-        height: 40px;
-      }
-
-      .botao-notificacao {
-        font-size: 12px;
-        padding: 10px 16px;
-      }
-    }
-  </style>
 </head>
 <body>
 
