@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#f2f5ff"/>
+  <rect x="60" y="60" width="520" height="240" rx="28" fill="#ffe6d5" stroke="#f08c00" stroke-width="6"/>
+  <rect x="110" y="110" width="120" height="140" rx="18" fill="#61dafb" opacity="0.8"/>
+  <rect x="260" y="130" width="110" height="130" rx="16" fill="#ff6f91" opacity="0.8"/>
+  <rect x="400" y="100" width="120" height="160" rx="20" fill="#98d85b" opacity="0.8"/>
+  <circle cx="220" cy="90" r="20" fill="#ffcb05"/>
+  <circle cx="320" cy="80" r="16" fill="#ffcb05"/>
+  <circle cx="440" cy="78" r="18" fill="#ffcb05"/>
+  <path d="M140 220 L140 280" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+  <path d="M190 220 L190 280" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+  <path d="M290 220 L290 280" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+  <path d="M340 220 L340 280" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+  <path d="M430 220 L430 280" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+  <path d="M480 220 L480 280" stroke="#444" stroke-width="8" stroke-linecap="round"/>
+  <rect x="520" y="70" width="70" height="30" rx="8" fill="#f08c00"/>
+  <text x="555" y="90" font-family="'Arial', sans-serif" font-size="20" fill="#fff" text-anchor="middle">Arte</text>
+  <text x="320" y="330" font-family="'Arial', sans-serif" font-size="32" fill="#343a40" text-anchor="middle" font-weight="bold">Oficina de Pintura</text>
+</svg>
