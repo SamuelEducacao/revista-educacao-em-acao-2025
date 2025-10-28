@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educação em Movimento - Revista Educação em Ação</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url("imagens/fundo2.jpg") no-repeat center center fixed;
+      background-size: cover;
+      color: #2d2d2d;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      backdrop-filter: brightness(1.1) saturate(1.2);
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #4a148c;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #00695c;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .icone {
+      font-size: 36px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #4a148c;
+    }
+
+    .card p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .card a {
+      margin-top: auto;
+      align-self: flex-start;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+      color: #00695c;
+    }
+
+    .voltar {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #00695c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 32px; }
+      h2 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Educação em Movimento</h1>
+  <h2>Ações e projetos que inspiram nossa rede</h2>
+
+  <div class="grid">
+    <div class="card">
+      <div class="icone">🌱</div>
+      <h3>Horta comunitária escolar</h3>
+      <p>Estudantes se unem à comunidade para cultivar alimentos saudáveis e aprender sobre sustentabilidade.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">🎨</div>
+      <h3>Arte que conecta histórias</h3>
+      <p>Projeto de murais colaborativos ressignifica espaços da escola e valoriza memórias locais.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">💻</div>
+      <h3>Laboratório de inovação</h3>
+      <p>Oficinas de programação e robótica abrem novas possibilidades de futuro para a juventude.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">📚</div>
+      <h3>Círculos de leitura</h3>
+      <p>Educadores criam encontros literários intergeracionais que fortalecem o vínculo entre escola e família.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">🤝</div>
+      <h3>Mentorias solidárias</h3>
+      <p>Voluntários acompanham estudantes em trajetórias personalizadas de aprendizagem e acolhimento.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">🎵</div>
+      <h3>Orquestra jovem da rede</h3>
+      <p>Música como ferramenta de disciplina, sensibilidade e protagonismo para crianças e adolescentes.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">🚀</div>
+      <h3>Feira de ciências itinerante</h3>
+      <p>Experimentos práticos percorrem as escolas levando curiosidade científica a cada comunidade.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">🧩</div>
+      <h3>Ensino inclusivo em ação</h3>
+      <p>Equipe multidisciplinar cria estratégias acessíveis que celebram a diversidade dos estudantes.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+    <div class="card">
+      <div class="icone">🌍</div>
+      <h3>Redes globais de aprendizagem</h3>
+      <p>Conexões internacionais inspiram projetos colaborativos e o protagonismo estudantil.</p>
+      <a href="#">Ler matéria</a>
+    </div>
+  </div>
+
+  <a class="voltar" href="index.html">← Voltar à capa</a>
+</body>
+</html>
