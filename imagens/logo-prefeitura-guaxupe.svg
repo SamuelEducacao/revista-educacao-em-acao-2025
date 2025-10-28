@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 260" role="img" aria-labelledby="title desc">
+  <title id="title">Prefeitura de Guaxupé</title>
+  <desc id="desc">Marca da Secretaria de Educação da Prefeitura de Guaxupé</desc>
+  <rect width="1400" height="260" fill="none"/>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-weight="600">
+    <text x="20" y="135" font-size="66" fill="#1b1b1b">Secretaria de</text>
+    <text x="20" y="200" font-size="66" fill="#1b1b1b">Educação</text>
+  </g>
+  <rect x="360" y="35" width="6" height="190" fill="#231f20" rx="3"/>
+  <g transform="translate(420,20)">
+    <path d="M120 0l24 40h88c4 0 7 3 7 7v83c0 57-54 111-119 111S1 187 1 130V47c0-4 3-7 7-7h88L120 0z" fill="#f5ba2e"/>
+    <path d="M121 25l18 30h66v73c0 47-45 92-101 92s-101-45-101-92V55h66l18-30h34z" fill="#0055a5"/>
+    <path d="M121 66c-13 0-23 11-23 24s10 24 23 24 23-11 23-24-10-24-23-24zm0 18a6 6 0 110 12 6 6 0 010-12z" fill="#f5ba2e"/>
+    <path d="M63 105l24 23 34-32 34 32 24-23v40c0 34-36 63-82 63s-82-29-82-63v-40z" fill="#009cde"/>
+    <path d="M32 101c16-2 28 5 34 22-21 13-40 24-54 24-12-16-3-42 20-46z" fill="#e4322b"/>
+    <path d="M210 101c-16-2-28 5-34 22 21 13 40 24 54 24 12-16 3-42-20-46z" fill="#e4322b"/>
+    <circle cx="121" cy="52" r="7" fill="#f5ba2e"/>
+    <path d="M113 57h16v32h-16z" fill="#f5ba2e"/>
+    <path d="M107 94h28l-14 32-14-32z" fill="#f5ba2e"/>
+    <path d="M90 44h62l-31 20-31-20z" fill="#f5ba2e"/>
+  </g>
+  <g font-family="'Montserrat', 'Segoe UI', sans-serif">
+    <text x="640" y="120" font-size="70" font-weight="700" fill="#00336f">PREFEITURA de</text>
+    <text x="640" y="200" font-size="120" font-weight="700" fill="#0056a7">Guaxupé</text>
+  </g>
+  <g font-family="'Montserrat', 'Segoe UI', sans-serif" font-size="58" font-weight="600">
+    <text x="1160" y="120" fill="#009c4c">Trabalhando</text>
+    <text x="1160" y="170" fill="#009c4c">o presente</text>
+    <text x="1160" y="220" fill="#ef3d23">Renovando</text>
+    <text x="1160" y="270" fill="#ef3d23">o futuro</text>
+  </g>
+</svg>
