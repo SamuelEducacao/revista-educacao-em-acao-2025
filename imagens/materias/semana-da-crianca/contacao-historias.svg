@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#fff8e7"/>
+  <rect x="40" y="40" width="560" height="280" rx="26" fill="#fbe2ff" stroke="#b07cc6" stroke-width="6"/>
+  <path d="M120 260 C150 220, 210 220, 240 260" fill="#fdd5b1"/>
+  <path d="M260 260 C290 220, 350 220, 380 260" fill="#fbc2eb"/>
+  <path d="M380 260 C410 220, 470 220, 500 260" fill="#d3f4ff"/>
+  <circle cx="180" cy="180" r="42" fill="#ffb74d"/>
+  <circle cx="300" cy="170" r="46" fill="#4fc3f7"/>
+  <circle cx="440" cy="180" r="44" fill="#81c784"/>
+  <rect x="250" y="220" width="140" height="70" rx="12" fill="#fff" stroke="#5e548e" stroke-width="4"/>
+  <path d="M265 235 Q320 210 375 235" fill="none" stroke="#5e548e" stroke-width="4"/>
+  <text x="320" y="268" font-family="'Arial', sans-serif" font-size="24" fill="#5e548e" text-anchor="middle">Era uma vez...</text>
+  <text x="320" y="330" font-family="'Arial', sans-serif" font-size="30" fill="#442c61" text-anchor="middle" font-weight="bold">Contação de Histórias</text>
+</svg>
