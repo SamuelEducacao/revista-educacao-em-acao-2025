@@ -1,110 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educação em Ação – Volume 6</title>
-<style>
-  @keyframes aparecerLetras {
-    0% { opacity: 0; transform: translateY(-30px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
+  <title>Consultoria em Processos Administrativos | Fase 1</title>
+  <meta name="description" content="Base estrutural para consultoria de análise e otimização de processos administrativos com tecnologia acessível.">
 
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+  <!-- Open Graph (placeholders) -->
+  <meta property="og:title" content="Consultoria em Processos Administrativos">
+  <meta property="og:description" content="Estrutura inicial do site institucional (Fase 1).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:image" content="https://example.com/assets/images/og-placeholder.png">
 
-  body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: url("imagens/fundo.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #14213D;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    overflow: hidden;
-  }
-
-  h1 {
-    font-size: 64px;
-    font-weight: bold;
-    margin: 0;
-    animation: aparecerLetras 1s ease-out forwards;
-  }
-
-  h2, .botao, .footer {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
-  }
-
-  h2 { animation-delay: 0.8s; font-size: 24px; margin: 10px 0 50px; }
-  .botao { animation-delay: 1.2s; }
-  .footer { animation-delay: 1.5s; }
-
-  .botao {
-    display: inline-block;
-    background-color: #14213D;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 18px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 5px;
-  }
-
-  .botao:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(0,0,0,0.25);
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    font-size: 16px;
-    color: #14213D;
-    text-align: center;
-  }
-
-  .footer img {
-    height: 80px;
-    display: block;
-    margin: 10px auto 0;
-  }
-
-  @media (max-width: 600px) {
-    h1 { font-size: 38px; }
-    h2 { font-size: 18px; }
-    .botao { font-size: 16px; padding: 12px 20px; }
-    .footer { font-size: 14px; }
-    .footer img { height: 40px; }
-  }
-</style>
-
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div>
-    <h1>EDUCAÇÃO EM AÇÃO</h1>
-    <h2>Volume 6 – Dezembro de 2025</h2>
-    <a href="menu.html" class="botao">ACESSE O ÍNDICE</a>
-    <a href="editorial.html" class="botao">LEIA O EDITORIAL</a>
-    <a href="volumes-anteriores.html" class="botao">VOLUMES ANTERIORES</a>
-    <a href="materias.html" class="botao">EDUCAÇÃO EM MOVIMENTO</a>
-  </div>
+  <!-- Skip link para acessibilidade -->
+  <a class="skip-link" href="#inicio">Pular para o conteúdo principal</a>
 
-  <div class="footer">
-    Secretaria Municipal de Educação de Guaxupé<br>
-    <img src="imagens/logo-prefeitura-guaxupe.png" alt="Logomarca da Secretaria Municipal de Educação de Guaxupé">
-  </div>
+  <!-- Header / Navegação fixa -->
+  <header class="site-header" id="topo">
+    <div class="container header-content">
+      <a class="logo" href="#inicio" aria-label="Ir para o início">Consultoria Administrativa</a>
 
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Menu principal">
+        <ul>
+          <li><a href="#inicio" class="nav-link active">Início</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#metodo" class="nav-link">Método</a></li>
+          <li><a href="#visao" class="nav-link">Visão</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção: Início / Hero -->
+    <section id="inicio" class="section hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Consultoria em processos administrativos</p>
+          <h1>Clareza, eficiência e tecnologia acessível para o setor público e administrativo.</h1>
+          <p>Estrutura inicial do site com foco em organização, diagnóstico e melhoria de rotinas. Conteúdo introdutório para evoluir nas próximas fases.</p>
+          <div class="button-group">
+            <a class="btn btn-primary" href="#contato">Falar com a consultoria</a>
+            <a class="btn btn-secondary" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-hidden="true">
+          <div class="hero-placeholder">
+            <p>Espaço reservado para imagem institucional</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Serviços -->
+    <section id="servicos" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Serviços em foco</h2>
+          <p>Cards editoriais para apresentar linhas de atuação com clareza.</p>
+        </header>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Diagnóstico de processos</h3>
+            <p>Mapeamento inicial, identificação de gargalos e revisão de fluxos administrativos.</p>
+          </article>
+          <article class="card">
+            <h3>Otimização operacional</h3>
+            <p>Propostas objetivas para reduzir retrabalho e melhorar prazos internos.</p>
+          </article>
+          <article class="card">
+            <h3>Padronização e governança</h3>
+            <p>Documentação de rotinas, indicadores básicos e práticas de controle.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Método -->
+    <section id="metodo" class="section section-muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>Método de trabalho</h2>
+          <p>Sequência de passos com linguagem objetiva e orientada a resultados.</p>
+        </header>
+        <ol class="steps">
+          <li>
+            <h3>Escuta e levantamento</h3>
+            <p>Entendimento do contexto institucional e das restrições operacionais.</p>
+          </li>
+          <li>
+            <h3>Mapeamento e análise</h3>
+            <p>Representação visual dos fluxos e análise de dados disponíveis.</p>
+          </li>
+          <li>
+            <h3>Recomendações práticas</h3>
+            <p>Plano de melhoria com prioridades, responsáveis e indicadores.</p>
+          </li>
+          <li>
+            <h3>Acompanhamento</h3>
+            <p>Suporte na implementação com ajustes e registros simples.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Seção: Visão -->
+    <section id="visao" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Educação e visão</h2>
+          <p>Compromisso com linguagem didática e tecnologia acessível para equipes administrativas.</p>
+        </header>
+        <div class="two-columns">
+          <div>
+            <h3>Capacitação contínua</h3>
+            <p>Conteúdos e materiais de apoio para fortalecer autonomia das equipes.</p>
+          </div>
+          <div>
+            <h3>Visão de longo prazo</h3>
+            <p>Foco em sustentabilidade das melhorias e cultura de processos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Sobre -->
+    <section id="sobre" class="section section-muted">
+      <div class="container">
+        <header class="section-header">
+          <h2>Sobre a consultoria</h2>
+          <p>Apresentação institucional com informações básicas e tom profissional.</p>
+        </header>
+        <div class="about">
+          <p>Atuação voltada para organizações públicas e administrativas, com foco em melhorar rotinas, reduzir complexidade e apoiar equipes na gestão diária.</p>
+          <p>Este site apresenta a base estrutural (Fase 1) para evolução de conteúdo e identidade visual.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção: Contato -->
+    <section id="contato" class="section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Contato</h2>
+          <p>Canal inicial para alinhamento e diagnóstico. Formulário é apenas demonstrativo.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="callout">
+            <h3>Vamos conversar sobre seu cenário atual</h3>
+            <p>Agende uma conversa introdutória para identificar necessidades e próximos passos.</p>
+            <form class="contact-form" aria-label="Formulário de contato demonstrativo">
+              <div class="form-field">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+              </div>
+              <div class="form-field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+              </div>
+              <div class="form-field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva brevemente sua necessidade"></textarea>
+              </div>
+              <button class="btn btn-primary" type="button">Enviar (placeholder)</button>
+            </form>
+          </div>
+
+          <div class="embed-placeholder" aria-label="Placeholder para Google Forms">
+            <h3>Embed do Google Forms</h3>
+            <p>Espaço reservado para o formulário oficial.</p>
+            <!--
+              Cole aqui o iframe do Google Forms quando estiver disponível.
+              Exemplo:
+              <iframe src="https://docs.google.com/forms/d/e/SEU_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2025 Consultoria em Processos Administrativos. Conteúdo em construção.</p>
+      <nav aria-label="Links de rodapé">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#metodo">Método</a></li>
+          <li><a href="#visao">Visão</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
